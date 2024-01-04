@@ -15,9 +15,6 @@ public class Category implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    /**
-     * 分类层级，从0开始
-     */
     private Integer level;
 
     @Column(name = "parent_id") private Long parentId;
@@ -40,27 +37,15 @@ public class Category implements Serializable {
     private Category parent;
 
 
-    /**
-     * 分类名字
-     */
     @NotNull @Size(min = 2, max = 20) private String name;
 
 
-    /**
-     * 价格
-     */
     @Column(name = "price")
     private BigDecimal price;
 
-    /**
-     * 图片
-     */
     @Column(name = "img")
     private String img;
 
-    /**
-     * 详情
-     */
     @Column(name = "detail")
     private String detail;
 
