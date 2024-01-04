@@ -1,0 +1,16 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/
+spring:
+  application:
+    name: gateway
+server:
+  port: 8084
+zuul:
+  add-host-header: true
+  sensitive-headers:
+  routes:
+    eureka-web:
+      path: /web/**
+      url: http://localhost:8080/eureka-web/
