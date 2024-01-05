@@ -2,6 +2,10 @@
 
 This project is developed using Spring Boot and Spring Cloud to implement a basic e-commerce application. It includes essential services like User, Product, and Order Services, facilitating functionalities such as user registration, authentication, product listing, product details, placing orders, and viewing order details.
 
+## Project link and video link
+Project Link: https://github.com/JoyJiang98/ShoppingOnline
+Video Link: https://youtu.be/tTdxvPLeXYQ
+
 ## Project Structure
 
 - **discovery**: Service Discovery Center
@@ -28,7 +32,7 @@ datasource:
     password: root
 ```
 
-### Running the front end
+## Running the front end
 1. Open dbshop directory with vsCode
 2. install node.js
 3. install vue using npm install -g @vue/cli
