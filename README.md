@@ -41,7 +41,7 @@ datasource:
 3. run all applications
 
 ## Running the front end
-1. Open dbshop directory with vsCode
+1. Open web directory with vsCode
 2. install node.js
 3. install vue using npm install -g @vue/cli
 4. using npm run serve or click the npm build script
