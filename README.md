@@ -2,8 +2,8 @@
 
 This project is developed using Spring Boot and Spring Cloud to implement a basic e-commerce application. It includes essential services like User, Product, and Order Services, facilitating functionalities such as user registration, authentication, product listing, product details, placing orders, and viewing order details.
 
-## Project link and video link
-Project Link: https://github.com/JoyJiang98/ShoppingOnline
+## video link
+
 Video Link: https://youtu.be/tTdxvPLeXYQ
 
 ## Project Structure
