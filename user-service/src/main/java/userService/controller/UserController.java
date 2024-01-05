@@ -37,12 +37,14 @@ public class UserController {
     @Autowired
     private DiscoveryClient client;
 
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping(value = "/login")
     public User login(@RequestBody User user){
         User u = userService.findByName(user.getName());
         return u;
     }
 
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping(value = "/insertUser")
     public boolean insertUser(@RequestBody User user){
         try{

@@ -20,6 +20,7 @@ public class OrderController {
     @Autowired
     private DiscoveryClient discoveryClient;
 
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping("/addOrder")
     public Boolean addOrder(@RequestBody OrderVo orderVo){
         orderService.save(orderVo);
@@ -27,6 +28,7 @@ public class OrderController {
     }
 
 
+    @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping("/getOrder/{id}")
     public ResponseEntity<Order> getOrderById(@PathVariable("id") Long id) {
         Order order = orderService.getOrderById(id);

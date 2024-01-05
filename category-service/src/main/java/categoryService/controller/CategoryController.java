@@ -39,7 +39,7 @@ public class CategoryController {
     }
 
 
-
+    @CrossOrigin(origins = "http://localhost:8080")
     @RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = "application/json")
     public Category get(@PathVariable Long id) {
         logServiceInstance();
@@ -50,7 +50,7 @@ public class CategoryController {
 
 
 
-
+    @CrossOrigin(origins = "http://localhost:8080")
     @RequestMapping(method = RequestMethod.POST, consumes = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<Category> save(@RequestBody Category category, UriComponentsBuilder ucb) {
@@ -68,6 +68,7 @@ public class CategoryController {
         return new ResponseEntity<>(saved, headers, HttpStatus.CREATED);
     }
 
+    @CrossOrigin(origins = "http://localhost:8080")
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")
     public List<Category> categories(@RequestParam(value = "level", defaultValue = "0") Integer level, @RequestParam(value = "name", defaultValue = "top") String name) {
         logServiceInstance();
