@@ -28,6 +28,14 @@ datasource:
     password: root
 ```
 
+### Running the front end
+1. Open dbshop directory with vsCode
+2. install node.js
+3. install vue using npm install -g @vue/cli
+4. using npm run serve or click the npm build script
+5. open the page with localhost:8080
+6. make sure you are running all the applications in the backend
+
 
 
 ## Database Scripts
