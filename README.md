@@ -2,7 +2,10 @@
 
 This project is developed using Spring Boot and Spring Cloud to implement a basic e-commerce application. It includes essential services like User, Product, and Order Services, facilitating functionalities such as user registration, authentication, product listing, product details, placing orders, and viewing order details.
 
-## video link
+## Group Name
+COMP41720-Distributed Systems-Group - 16
+
+## Video link
 
 Video Link: https://youtu.be/tTdxvPLeXYQ
 
@@ -31,6 +34,11 @@ datasource:
     username: root
     password: root
 ```
+
+## Running the back end
+1. Opening the project with idea
+2. using maven to complete the configuration
+3. run all applications
 
 ## Running the front end
 1. Open dbshop directory with vsCode
